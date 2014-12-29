@@ -1,0 +1,29 @@
+{% set pages = h.latestnews(2) %}
+
+
+<div class="box stats">
+  <div class="inner">
+
+  <h2>最新消息<span style="float:right;font-size:0.65em;"><a href="/pages">讀取更多...</a></span></h2>
+
+  {% if pages %}
+  
+    {% for page in pages %}
+      {% set url = h.url_for(controller='ckanext.pages.controller:PagesController', action='pages_show', page='/' + page.name) %}
+      <div class="dataset-item">
+        <h3 class="dataset-heading">
+          <a href="{{ url }}" style="color:#C14531;">{{ page.title }}</a>
+        </h3>
+        {% if page.content %}
+          {{ h.markdown_extract(page.content,50) }}
+        {% else %}
+          <p class="empty">{{ _('This page currently has no content') }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <p class="empty">{{ _('There are currently no pages here') }}</p>
+  {% endif %}
+
+  </div>
+</div>

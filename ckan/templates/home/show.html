@@ -1,0 +1,46 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _('Show') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li class="active">{% link_for _('Show'), controller='home', action='show' %}</li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module">
+    <div class="module-content" style="padding:30px 70px;">
+
+
+      <div style="font-size:16px;">
+        <p style="line-height:26px;">為達成創造臺南開放資料活化加值與推廣之效，本府規劃展示府內及使用者利用本平台開放資料所開發之應用，經本府審核即可於本平台展示</p>
+        <br/>
+        <div style="line-height:26px;">
+          <table style="width:100%;">
+          <tr style="border-top: 1px solid #333;">
+            <th style="width:130px;"></th>
+            <th>App名稱及內容</th>
+            <th style="width:125px;">iOS</th>
+            <th style="width:125px;">Android</th>
+          </tr>
+          <tr style="border-top: 1px solid #333;border-bottom: 1px solid #333;">
+            <td style="text-align:center;"><img src="tn-free-logo.png" style="width:114px;" /></td>
+            <td><p>臺南福利通</p>
+<p>以健康福利為訴求，臺南市政府提供APP讓民眾快速尋找醫療、護理、福利、藥局、公廁與照顧等服務，並以明確圖示與明顯字體的有善易用操作介面方便民眾使用(原始碼下載)</p></td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+          </tr>
+          <tr style="border-top: 1px solid #333;border-bottom: 1px solid #333;line-height:100px;">
+            <td colspan="4">&nbsp;</td>
+          </tr>
+
+          </table>
+        </div>
+      </div>
+
+
+
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}

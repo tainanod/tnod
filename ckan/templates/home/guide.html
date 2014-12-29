@@ -1,0 +1,26 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _('Guide') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li class="active">{% link_for _('Guide'), controller='home', action='guide' %}</li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module"> 
+    <div class="module-content" style="font-size:16px;padding:30px 70px;">
+      
+      <p style="line-height:26px;">臺南市政府開放資料平台提供各式資料，民眾或機關可在網站下載或以API介接方式取得資料，俾供後續加值及應用，為方便開發人員取得及使用，本平台以較普及的檔案格式和業界一般的標準提供資料。</p>
+      <p style="line-height:26px;">
+        <ul><span style="color:#c66;font-weight:bold;line-height:26px;">提供方式：</span>
+          <li style="line-height:26px;">資料下載：直接於網站中的各資料頁面點擊”下載”即可下載該實體資料，為讓各界容易使用本府開放資料，實體資料提供原則將以結構化的CSV 檔案為主，現階段檔案格式包含： CSV 、 Excel 、XML、KML、SHP、JPG、PDF等。</li>
+          <li style="line-height:26px;">系統API 介接：可直接以系統介接的方式連結該資料介接URL取得內容。檔案格式：JSON、XML。</li>
+        </ul>
+      </p>
+      <p style="line-height:26px;">每份資料均有詮釋資料，列出資料的格式及欄位定義，協助開發人員充分了解資料內容或應使用的介接技術，針對較複雜的API，並於平台點擊”資料API”時即提供相關使用說明。</p>
+
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}

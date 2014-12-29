@@ -1,0 +1,59 @@
+  <div role="main" class="hero">
+
+    <div class="container" style="height:277px;">
+      {% snippet 'home/snippets/search_geo.html' %}
+    </div>
+  </div>
+    
+
+  <div role="main">
+    <div class="container" style="margin-top:15px;margin-bottom:15px;" >
+      <div class="row">
+        <div class="span12">
+
+          <div class="box">
+            <div class="inner">
+            <h2>最新資料集</h2>
+          {% set hots = h.tnexthots('abc') %}
+          {% for hot in hots.results %}
+  <ul class="dataset-list unstyled">
+    {#{ hot.notes }#}
+    {% set list_class = "unstyled dataset-list" %}
+    {% set item_class = "dataset-item module-content" %}
+
+    {% snippet 'snippets/package_item.html', package=hot, item_class=item_class, hide_resources=hide_resources, banner=banner, truncate=truncate, truncate_title=truncate_title %}
+  
+  
+  </ul>
+{% endfor %}
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top:15px;margin-bottom:15px;">
+      <div class="row row2">
+        <div class="span6 col1">
+          {% snippet 'home/snippets/news.html' %}
+        </div>
+        <div class="span6 col2">
+          {% snippet 'home/snippets/stats.html' %}
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="container" style="margin-top:15px;margin-bottom:15px;" >
+      <div class="row row2">
+        <div class="span6 col1">
+          {% snippet 'home/snippets/featured_group.html' %}
+        </div>
+        <div class="span6 col2">
+          {% snippet 'home/snippets/featured_organization.html' %}
+        </div>
+      </div>
+    </div>
+    
+  </div>
+

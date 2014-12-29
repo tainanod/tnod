@@ -1,0 +1,45 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _('Specification') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li class="active">{% link_for _('Specification'), controller='home', action='specification' %}</li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module">
+    <div class="module-content" style="padding:30px 70px;">
+      <h3>請遵循國家發展委員會訂定的政府資料開放平臺資料使用規範</h3>
+      <p>中華民國102年4月26日訂定</p>
+      <div style="font-size:16px;">
+      <p style="color:#c66;font-weight:bold;">一、目的</p>
+      <p style="line-height:26px;">便利民眾共享及應用政府資料，促進政府資料加值應用，結合民間創意提升政府資料品質及價值，活化政府資料應用，優化政府服務品質。</p>
+      <p style="color:#c66;font-weight:bold;">二、依據</p>
+      <p style="line-height:26px;">依政府資訊公開法與行政院及所屬各級機關政府資料開放作業原則(以下簡稱作業原則)第七點及第十四點規定訂定。</p>
+      <p style="color:#c66;font-weight:bold;">三、授權方式及範圍</p>
+      <p style="line-height:26px;">各機關依作業原則規定，於政府資料開放平臺(以下簡稱本平臺) 集中公開列式之資料，以無償及非專屬授權方式授權使用者得不限時間及地域，重製、改作、編輯、公開傳輸或為其他利用方式，開發各種產品或服務（以下簡稱加值衍生物），提供公眾使用，無須取得各資料提供機關(以下簡稱各機關)之書面或其他方式授權，但授權範圍不包含商標權及專利權。</p>
+      <p style="line-height:26px;">本平臺集中列式之政府資料，由各機關維護管理。使用者公開發行、公開展示或其他利用本平臺開放資料產生之加值衍生物，應以適當方式清楚註明資料來源主管機關。</p>
+      <p style="line-height:26px;">資料來源主管機關如於資料集註明另訂使用規範或收費標準者，應依其規定辦理。</p>
+      <p style="color:#c66;font-weight:bold;">四、使用者承諾事項</p>
+      <p style="line-height:26px;">使用者利用本平臺之開放資料，視同同意遵守本規範，並應遵守本平臺公告事項之下載及連線方式等取用方式，以確保本平臺資訊系統穩定及其他使用者得以公平使用。違反本規範之使用者，得停止其使用本平臺之權利。</p>
+      <p style="line-height:26px;">使用者利用本平臺之開放資料，如有發現政府資料錯誤或遺漏，應同意無償提供資料來源主管機關參考及修正。</p>
+      <p style="line-height:26px;">使用者提供公眾使用之加值衍生物，如因其故意或過失，致第三人權益受損時，應同意自行負責處理，並負損害賠償責任，本平臺管理機關及各機關概不負責。如因其故意或過失導致本平臺管理機關及各機關遭受損害或第三人向本平臺管理機關及各機關請求賠償損害（包括但不限於國家賠償責任），使用者應對本平臺管理機關及各機關負賠償責任。</p>
+      <p style="color:#c66;font-weight:bold;">五、政府機關責任之限制</p>
+      <p style="line-height:26px;">本平臺開放之政府資料，不構成任何政府申述、保證或暗示其同意、認可、推薦或批准意思表示。</p>
+      <p style="line-height:26px;">本平臺管理機關及各機關對開放資料內容之正確性及完整性，不負擔保之責。使用者如因使用該開放之資料而受損害或損失，或因此導致使用者或第三人遭受損害或損失而遭求償者，本平臺管理機關及各機關不負任何賠償或補償之責。</p>
+      <p style="line-height:26px;">本平臺管理機關及各機關如因網路線路或設備故障、檢修、保養、停電或其他天災事變等不可抗力情事，致無法提供使用者資料時，將於事先或事後於本平臺公告相關訊息。使用者因此所產生損害或損失，本平臺管理機關及各機關不負任何賠償或補償之責。</p>
+      <p style="color:#c66;font-weight:bold;">六、開放資料停止提供</p>
+      <p style="line-height:26px;">有下列情形之一者，各機關得隨時停止全部或一部開放資料提供，使用者不得向本平臺管理機關及各機關請求任何賠償或補償：</p>
+      <p>(一) 因政策變更或其他正當事由，致各機關認為繼續提供資料供使用者加值使用，已不符合公共利益之要求者。</p>
+      <p>(二) 各機關開放之資料有侵害第三人智慧財產權、隱私權或其他法令疑慮者。</p>
+      <p style="color:#c66;font-weight:bold;">七、規範之增修</p>
+      <p style="line-height:26px;">本平臺得視需要增修本規範，並將相關訊息公告於本平臺最新消息，提供各界瀏覽。</p>
+      </div>
+      <br/>
+      <p>(資料來源： <a href="http://data.gov.tw/principle" target="_blank">http://data.gov.tw/principle)</a></p>
+
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}

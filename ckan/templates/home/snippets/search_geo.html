@@ -1,0 +1,21 @@
+
+{% set placeholder = _('eg. Gold Prices') %}
+
+<!--<div class="module module-search module-narrow module-shallow box" style="width:480px; margin:auto;">-->
+<div class="" style="width:480px; margin:auto; padding-top:70px;">
+  <form style="border-bottom:0;" class="module-content search-form" method="get" action="{% url_for controller='package', action='search' %}">
+    <!--<h3 class="heading">{{ _("Search Your Data") }}</h3>
+    <h3 class="heading" style="text-align:center;">台南市政府資料開放平台</h3>
+    -->
+    <img src="/base/images/tainan-hero-title.png">
+    <div class="search-input control-group search-giant" >
+      <input type="text" class="search" name="q" value="" autocomplete="off" placeholder="例如：臺南" />
+      <button type="submit">
+        <i class="icon-search"></i>
+        <span>{{ _('Search') }}</span>
+      </button>
+    </div>
+  </form>
+
+
+</div>
